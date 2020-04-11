@@ -1,9 +1,6 @@
-# nodejs-login-passport-mongodb
-
 # NodeJS login with Passport and MongoDB
 
-## tutorial from
-### https://www.youtube.com/watch?v=uVltgEcjNww
+## tutorial from: https://www.youtube.com/watch?v=uVltgEcjNww
 
 
 1. git clone
