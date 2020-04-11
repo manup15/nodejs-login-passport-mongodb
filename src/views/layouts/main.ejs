@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Login - NodeJS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/solar/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">NodeJS Login with Passport</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <% if (user) { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Profile</a>
+                </li>
+              <% } else {%>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signin">Signin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/signup">Signup</a>
+                  </li>
+                <% } %>
+
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <% if (signupMessage.length > 0) { %>
+            <div class="alert alert-danger"> <%= signupMessage %> </div>
+        <% } %>
+    
+        <% if (signinMessage.length > 0) { %>
+            <div class="alert alert-danger"> <%= signupMessage %> </div>
+        <% } %>
+    
+        <%- body %>
+    </div>
+</body>
+</html>

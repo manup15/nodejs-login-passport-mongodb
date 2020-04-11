@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-login-passport-mongodb",
+  "version": "1.0.0",
+  "description": "Node.js login created with Passport and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manup15/nodejs-login-passport-mongodb.git"
+  },
+  "author": "Manuel Paiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manup15/nodejs-login-passport-mongodb/issues"
+  },
+  "homepage": "https://github.com/manup15/nodejs-login-passport-mongodb#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.9.7",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.3"
+  }
+}
